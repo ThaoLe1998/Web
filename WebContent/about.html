@@ -1,0 +1,990 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Group10_GTNM</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/navbar.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+<!--Custom font -->
+<link
+	href="https://fonts.googleapis.com/css?family=Geo|Montserrat+Alternates"
+	rel="stylesheet">
+	<link rel="stylesheet"
+	href="css/font-awesome.min.css">
+	<link rel="stylesheet"
+	href="css/footer-distributed-with-contact-form.css">
+</head>
+
+<!--Ionicons-->
+<link href="css/font-awesome.css" rel="stylesheet">
+
+
+
+
+
+
+<link rel="stylesheet" href="timeline.css">
+<!-- Resource style -->
+
+<link rel="stylesheet" href="socialbuttons.css">
+
+<style>
+body {
+	background-image: url('images/nen.png');
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 13px;
+}
+
+.jumbotron {
+	background-color: transparent;
+	color: whitesmoke;
+	margin: 0 auto;
+}
+
+.modal-content {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: whitesmoke;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.modal {
+	padding: auto;
+}
+
+.progress {
+	width: 300px;
+	background-color: darkgray;
+}
+
+.cd-timeline-content p {
+	color: black;
+}
+
+.nut {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: whitesmoke;
+}
+
+.nut:hover {
+	background-color: whitesmoke;
+	color: black;
+}
+
+.label-info {
+	background: none;
+}
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar"
+	data-offset="50" onload="myFunction()" style="margin: 0;">
+	<div id="loader"></div>
+	<div class="container">
+
+		<!-- Static navbar -->
+		<nav class="navbar navbar-inverse navbar-fixed-top"
+			style="font-family: 'Montserrat Alternates', sans-serif; font-size: 20px">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed"
+						data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" style="font-size: 30px">Group 10</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Exercise <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="lab1/lab1.html">Lab1: Introduce Azure</a></li>
+								<li><a href="">Lab2: </a></li>
+								<li><a href="">Lab3:</a></li>
+								<li><a href="">Lab4:</a></li>
+							</ul></li>
+						<li><a href="about.html">About us</a></li>
+						<li><a href="diary.html">Group Diary</a></li>
+
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav></div>
+		<div style="display: none;" id="myDiv" class="animate-bottom">
+
+			<!-- Main component for a primary marketing message or call to action -->
+			<div class="jumbotron"
+				style="font-family: 'Montserrat Alternates', sans-serif;">
+
+				<div class="container">
+					<h1 style="text-align: center; font-family: 'Montserrat Alternates', sans-serif; color:indigo">Our
+						Members</h1>
+					<hr style="background: hotpink;">
+					
+					<br>
+					<div class="row" style="text-align: center">
+						<div class="col-lg-12">
+							<a href="#Thao" title="Click here to see detail about ThaoLe" data-toggle="modal"><img class="img-circle"
+								src="images/thao.jpg" alt="Generic placeholder image"
+								width="140" height="140"></a>
+							<h2>Lê Thị Bé Thảo</h2>
+							<p>Group Leader</p>
+						</div>
+						<!-- /.col-lg-4 -->
+					</div>
+					<!-- /.row -->
+
+					<hr>
+
+					<br> <br>
+
+
+					<div class="row" style="text-align: center">
+						<div class="col-lg-4">
+							<a href="#Tuyen" data-toggle="modal" title="Click here to see detail about Tuyen"> <img class="img-circle"
+								src="images/tuyen.jpg" alt="Generic placeholder image"
+								width="140" height="140"></a>
+							<h3>Tăng Thị Kim Tuyền</h3>
+							<p>Group Member</p>
+						</div>
+						<!-- /.col-lg-4 -->
+						<div class="col-lg-4">
+							<a href="#Khoa" data-toggle="modal" title="Click here to see detail about Khoa"><img class="img-circle"
+								src="images/khoa.jpg" alt="Generic placeholder image"
+								width="140" height="140"></a>
+							<h3>Phạm Trần Đăng Khoa</h3>
+							<p>Group Member</p>
+						</div>
+						<!-- /.col-lg-4 -->
+
+
+
+						<div class="col-lg-4">
+							<a href="#Xuan" data-toggle="modal" title="Click here to see detail about Xuan"><img class="img-circle"
+								src="images/xuan.jpg" alt="Generic placeholder image"
+								width="140" height="140"></a>
+							<h3>Trần Thị Minh Xuân</h3>
+							<p>Group Member</p>
+						</div>
+						<!-- /.col-lg-4 -->
+
+
+					</div>
+				</div>
+
+</div>
+
+
+
+				<!-- Modal -->
+				<!-- Thao -->
+				<div class="modal fade" id="Thao" tabindex="-1" role="dialog"
+					aria-labelledby="myModalLabel" aria-hidden="true"
+					style="font-family: 'Montserrat Alternates', sans-serif;">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="row">
+									<div class="col-sm-5"
+										style="margin-bottom: 10px; margin-left: 50px;">
+
+										<img src="images/thao.jpg" name="aboutme" width="140"
+											height="140" border="0" class="img-circle"></a>
+										<h3>Lê Thị Bé Thảo</h3>
+										<div class="social-networks" id="socialbutton">
+											<a href="#" class="twitter" data-toggle="tooltip"
+												title="Twitter"><i class="fa fa-twitter"></i></a> <a
+												href="https://www.facebook.com/profile.php?id=100006924649316"
+												class="facebook" data-toggle="tooltip" title="Facebook"><i
+												class="fa fa-facebook"></i></a> <a href="#" class="google"
+												data-toggle="tooltip" title="Google"><i
+												class="fa fa-google-plus" style="padding-left: 6px;"></i></a> <a
+												href="https://15130169.azurewebsites.net" class="canhan"
+												data-toggle="tooltip" title="Trang cá nhân"><i
+												class="fa fa-user-circle" style="padding-left: 8px;"></i></a>
+										</div>
+
+									</div>
+
+									<div class="col-sm-5" style="margin-left: 50px;">
+										<div class="container">
+											<div class="row">
+												<p style="margin-left: 80px; margin-bottom: 15px;">Skills</p>
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 20px; height: 20px;"><p>HTML</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+															style="width: 85%;">
+															<b>90%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 41px; height: 20px;"><p>CSS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+															style="width: 60%;">
+															<b>90%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 35px; height: 20px;"><p>Java</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+															style="width: 80%;">
+															<b>90%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 57px; height: 20px;"><p>JS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+															style="width: 70%;">
+															<b>90%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 38px; height: 20px;"><p>DTB</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+															style="width: 90%;">
+															<b>90%</b>
+														</div>
+													</div>
+												</div>
+
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-body">
+								<h3 class="text-center" style="font-size: 30px;">ABOUT</h3>
+								<div class="about">
+									<p>- My name is Lê Thị Bé Thảo, I'm studying I.T at Nong Lam
+										University</p>
+									<p>
+										<i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>IT Student
+										(Junior)
+									</p>
+									<p>
+										<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>JuLy 28th
+									</p>
+									<p>
+										<i class="fa fa-id-card fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>16130583
+									</p>
+									<p>
+										<i class="fa fa-building fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Nong Lam
+										University
+									</p>
+									<p>
+										<i class="fa fa-envelope fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>16130583@st.hcmuaf.edu.vn
+									</p>
+									<p>
+										<i class="fa fa-thumbs-up fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Listen to
+										music, watching movie and eating
+									</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">INTERESTS</h3>
+								<div class="about">
+									<p>Watching anime, manga. Reading books, news</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">TIMELINE</h3>
+								<div class="timeline">
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>July 28th,1998</h3>
+											<p>The day I was born.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2003-2009</h3>
+											<p>Studied at Vĩnh Xương primary and junior high school.</p>
+										</div>
+									</div>
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>2012</h3>
+											<p>Studied at Vĩnh Xương high school.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2016-Now</h3>
+											<p>Study at Nong Lam University</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--Tuyền-->
+				<div class="modal fade" id="Tuyen" tabindex="-1" role="dialog"
+					aria-labelledby="myModalLabel" aria-hidden="true"
+					style="font-family: 'Montserrat Alternates', sans-serif;">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="row">
+									<div class="col-sm-5"
+										style="margin-bottom: 10px; margin-left: 50px;">
+										<img src="images/tuyen.jpg" name="aboutme" width="140"
+											height="140" border="0" class="img-circle"></a>
+										<h3>Tăng Thị Kim Tuyền</h3>
+										<div class="social-networks" id="socialbutton">
+											<a href="#" class="twitter" data-toggle="tooltip"
+												title="Twitter"><i class="fa fa-twitter"></i></a> <a
+												href="https://www.facebook.com/tang.tuyen.14" class="facebook" data-toggle="tooltip"
+												title="Facebook"><i class="fa fa-facebook"></i></a> <a
+												href="#" class="google" data-toggle="tooltip" title="Google"><i
+												class="fa fa-google-plus" style="padding-left: 6px;"></i></a> <a
+												href="#"
+												class="canhan" data-toggle="tooltip" title="Trang cá nhân"><i
+												class="fa fa-user-circle" style="padding-left: 8px;"></i></a>
+										</div>
+									</div>
+
+									<div class="col-sm-5" style="margin-left: 50px;">
+										<div class="container">
+											<div class="row">
+												<p style="margin-left: 80px; margin-bottom: 15px;">Skills</p>
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 35px; height: 20px;"><p>PTS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+															style="width: 50%;">
+															<b>50%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 23px; height: 20px;"><p>HTML</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+															style="width: 50%;">
+															<b>50%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 14px; height: 20px;"><p>French</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+															style="width: 40%;">
+															<b>40%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 10px; height: 20px;"><p>English</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+															style="width: 70%;">
+															<b>70%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 33px; height: 20px;"><p>Java</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+															style="width: 40%;">
+															<b>40%</b>
+														</div>
+													</div>
+												</div>
+
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-body">
+								<h3 class="text-center" style="font-size: 30px;">ABOUT</h3>
+								<div class="about">
+									<p>- My name is Tăng Thị Kim Tuyền, I'm an I.T student of Nong Lam
+										University</p>
+									<p>
+										<i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>IT Student
+										(Junior)
+									</p>
+									<p>
+										<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Mar 28th
+									</p>
+									<p>
+										<i class="fa fa-id-card fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>16130653
+									</p>
+									<p>
+										<i class="fa fa-building fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Nong Lam
+										University
+									</p>
+									<p>
+										<i class="fa fa-envelope fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>16130653@st.hcmuaf.edu.vn
+									</p>
+									<p>
+										<i class="fa fa-thumbs-up fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Listen to
+										music, watching movie and eating
+									</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">INTERESTS</h3>
+								<div class="about">
+									<p>Beside making beautiful websites, I also love
+										photography. I also love listening to music and go around Sài
+										Gòn</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">TIMELINE</h3>
+								<div class="timeline">
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>Mar 28th,1997</h3>
+											<p>The day I was born.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2008</h3>
+											<p>Studied at Hàm Thắng junior high school.</p>
+										</div>
+									</div>
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>2011</h3>
+											<p>Studied at Trần Hưng Đạo high school.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2015-Now</h3>
+											<p>Study at Nong Lam University</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!--Khoa-->
+				<div class="modal fade" id="Khoa" tabindex="-1" role="dialog"
+					aria-labelledby="myModalLabel" aria-hidden="true"
+					style="font-family: 'Montserrat Alternates', sans-serif;">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="row">
+									<div class="col-sm-5"
+										style="margin-bottom: 10px; margin-left: 50px;">
+										<img src="images/khoa.jpg" name="aboutme" width="140"
+											height="140" border="0" class="img-circle"></a>
+										<h3>Phạm Trần Đăng Khoa</h3>
+										<div class="social-networks" id="socialbutton">
+											<a href="#" class="twitter" data-toggle="tooltip"
+												title="Twitter"><i class="fa fa-twitter"></i></a> <a
+												href="#" class="facebook" data-toggle="tooltip"
+												title="Facebook"><i class="fa fa-facebook"></i></a> <a
+												href="#" class="google" data-toggle="tooltip" title="Google"><i
+												class="fa fa-google-plus" style="padding-left: 6px;"></i></a> <a
+												href="https://15130176.azurewebsites.net" class="canhan"
+												data-toggle="tooltip" title="Trang cá nhân"><i
+												class="fa fa-user-circle" style="padding-left: 8px;"></i></a>
+										</div>
+									</div>
+
+									<div class="col-sm-5" style="margin-left: 50px;">
+										<div class="container">
+											<div class="row">
+												<p style="margin-left: 80px; margin-bottom: 15px;">Skills</p>
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 23px; height: 20px;"><p>HTML</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+															style="width: 70%;">
+															<b>70%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 35px; height: 20px;"><p>CSS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+															style="width: 70%;">
+															<b>70%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 50px; height: 20px;"><p>JS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+															style="width: 40%;">
+															<b>40%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 33px; height: 20px;"><p>Java</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+															style="width: 40%;">
+															<b>40%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 10px; height: 20px;"><p>English</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+															style="width: 80%;">
+															<b>80%</b>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-body">
+								<h3 class="text-center" style="font-size: 30px;">ABOUT</h3>
+								<div class="about">
+									<p>- Hi guys, my name is Trần Quang Thiện, a 20-year-old
+										boy currently studying I.T at Nong Lam University, my main
+										strength is something about front end develop and English.
+										Below are some of my information</p>
+									<p>
+										<i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>IT Student
+										(Junior)
+									</p>
+									<p>
+										<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Mar 17th
+									</p>
+									<p>
+										<i class="fa fa-id-card fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>15130176
+									</p>
+									<p>
+										<i class="fa fa-building fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Nong Lam
+										University
+									</p>
+									<p>
+										<i class="fa fa-envelope fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>15130176@st.hcmuaf.edu.vn
+									</p>
+									<p>
+										<i class="fa fa-thumbs-up fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Listen to
+										music, watching movie and eating
+									</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">INTERESTS</h3>
+								<div class="about">
+									<p>Beside making beautiful websites, I also love
+										photography. I also love listening to music and go around Sài
+										Gòn</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">TIMELINE</h3>
+								<div class="timeline">
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>Mar 17th,1997</h3>
+											<p>A very special day, the day I was born, the day this
+												world have the one and only Trần Quang Thiện.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2002-2007</h3>
+											<p>A very first step of me to the Kim Đồng primary
+												school, still remmeber a crying boy who missed his mom.</p>
+										</div>
+									</div>
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>2008-2011</h3>
+											<p>Studied at Trần Hưng Đạo high school where I met many
+												friends, many teachers that gave me inspiration.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2012-2015</h3>
+											<p>Studied at Tây Ninh high school, this time was the
+												most memorable time. At that time, I met my best friend,
+												participated in many content such as music content, camping
+												content,...</p>
+											<p>Participated at the English Competition for gifted
+												students in the middle of 2015, but sadly I failed</p>
+										</div>
+									</div>
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>At the end of 2015</h3>
+											<p>Be a member of Nong Lam University, started life of a
+												alumnus.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>Now(2017)</h3>
+											<p>Junior I.T Students, chose web developer for my main
+												strength</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<!--Xuân-->
+				<div class="modal fade" id="Xuan" tabindex="-1" role="dialog"
+					aria-labelledby="myModalLabel" aria-hidden="true"
+					style="font-family: 'Montserrat Alternates', sans-serif;">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<div class="row">
+									<div class="col-sm-5"
+										style="margin-bottom: 10px; margin-left: 50px;">
+										<img src="images/xuan.jpg" name="aboutme" width="140"
+											height="140" border="0" class="img-circle"></a>
+										<h3>Võ Thị Tuyết Phương</h3>
+										<div class="social-networks" id="socialbutton">
+											<a href="#" class="twitter" data-toggle="tooltip"
+												title="Twitter"><i class="fa fa-twitter"></i></a> <a
+												href="#" class="facebook" data-toggle="tooltip"
+												title="Facebook"><i class="fa fa-facebook"></i></a> <a
+												href="#" class="google" data-toggle="tooltip" title="Google"><i
+												class="fa fa-google-plus" style="padding-left: 6px;"></i></a> <a
+												href="https://15130146-vothituyetphuong.azurewebsites.net"
+												class="canhan" data-toggle="tooltip" title="Trang cá nhân"><i
+												class="fa fa-user-circle" style="padding-left: 8px;"></i></a>
+										</div>
+									</div>
+
+									<div class="col-sm-5" style="margin-left: 50px;">
+										<div class="container">
+											<div class="row">
+												<p style="margin-left: 80px; margin-bottom: 15px;">Skills</p>
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 23px; height: 20px;"><p>HTML</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+															style="width: 70%;">
+															<b>70%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 35px; height: 20px;"><p>CSS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+															style="width: 70%;">
+															<b>70%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 50px; height: 20px;"><p>JS</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+															style="width: 40%;">
+															<b>40%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 33px; height: 20px;"><p>Java</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+															style="width: 40%;">
+															<b>40%</b>
+														</div>
+													</div>
+												</div>
+
+												<div>
+													<span class="label label-info"
+														style="float: left; margin-right: 10px; height: 20px;"><p>English</p></span>
+													<div class="progress">
+														<div class="progress-bar" role="progressbar"
+															aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+															style="width: 80%;">
+															<b>80%</b>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-body">
+								<h3 class="text-center" style="font-size: 30px;">ABOUT</h3>
+								<div class="about">
+									<p>- Hi guys, my name is Võ Thị Tuyết Phương</p>
+									<p>
+										<i class="fa fa-briefcase fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>IT Student
+										(Junior)
+									</p>
+									<p>
+										<i class="fa fa-birthday-cake fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Mar 17th
+									</p>
+									<p>
+										<i class="fa fa-id-card fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>15130176
+									</p>
+									<p>
+										<i class="fa fa-building fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Nong Lam
+										University
+									</p>
+									<p>
+										<i class="fa fa-envelope fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>15130176@st.hcmuaf.edu.vn
+									</p>
+									<p>
+										<i class="fa fa-thumbs-up fa-fw w3-margin-right w3-xlarge"
+											style="color: whitesmoke; margin-right: 20px"></i>Listen to
+										music, watching movie and eating
+									</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">INTERESTS</h3>
+								<div class="about">
+									<p>Beside making beautiful websites, I also love
+										photography. I also love listening to music and go around Sài
+										Gòn</p>
+								</div>
+								<h3 class="text-center" style="font-size: 30px;">TIMELINE</h3>
+								<div class="timeline">
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>Mar 17th,1997</h3>
+											<p>A very special day, the day I was born, the day this
+												world have the one and only Trần Quang Thiện.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2002-2007</h3>
+											<p>A very first step of me to the Kim Đồng primary
+												school, still remmeber a crying boy who missed his mom.</p>
+										</div>
+									</div>
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>2008-2011</h3>
+											<p>Studied at Trần Hưng Đạo high school where I met many
+												friends, many teachers that gave me inspiration.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>2012-2015</h3>
+											<p>Studied at Tây Ninh high school, this time was the
+												most memorable time. At that time, I met my best friend,
+												participated in many content such as music content, camping
+												content,...</p>
+											<p>Participated at the English Competition for gifted
+												students in the middle of 2015, but sadly I failed</p>
+										</div>
+									</div>
+									<div class="tl-container left">
+										<div class="tl-content">
+											<h3>At the end of 2015</h3>
+											<p>Be a member of Nong Lam University, started life of a
+												alumnus.</p>
+										</div>
+									</div>
+									<div class="tl-container right">
+										<div class="tl-content">
+											<h3>Now(2017)</h3>
+											<p>Junior I.T Students, chose web developer for my main
+												strength</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+				
+
+			</div>
+			<!-- /container -->
+
+
+
+
+
+
+			<!-- Bootstrap core JavaScript
+        ================================================== -->
+			<!-- Placed at the end of the document so the pages load faster -->
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');</script>
+			<script src="js/bootstrap.min.js"></script>
+			<script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 0);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+        
+        
+<!-- Footer -->
+<footer class="footer-distributed">
+
+	<div class="footer-left">
+		<p class="footer-company-name">
+			Group 10 - GTNM <br>
+			Teacher: Trần Thị Thanh Nga<br>
+			Information teachnology - Nong Lam University
+			&copy; 2018
+		</p>
+		<div class="footer-icons">
+			<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+				class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+			<a href="#"><i class="fa fa-github"></i></a>
+
+		</div>
+
+	</div>
+
+	<div class="footer-right">
+
+		<p>Contact Us</p>
+
+		<form action="#" method="post">
+
+			<input type="text" name="email" placeholder="Email" />
+			<textarea name="message" placeholder="Message"></textarea>
+			<button>Send</button>
+
+		</form>
+
+	</div>
+
+	</footer>
+
+<!-- Footer -->
+</body>
+</html>
+

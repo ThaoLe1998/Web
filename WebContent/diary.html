@@ -1,0 +1,628 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Group10_GTNM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!--Custom font -->
+    <link href="https://fonts.googleapis.com/css?family=Geo|Montserrat+Alternates" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
+</head>
+
+<!--Ionicons-->
+<link href="css/font-awesome.css" rel="stylesheet">
+
+
+
+
+
+
+<link rel="stylesheet" href="timeline.css">
+<!-- Resource style -->
+
+<link rel="stylesheet" href="socialbuttons.css">
+
+<style>
+    body {
+	background-image: url('images/nen.png');
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 13px;
+}
+
+.jumbotron {
+	background-color: transparent;
+	color: whitesmoke;
+	margin: 0 auto;
+}
+
+.modal-content {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: whitesmoke;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.modal {
+	padding: auto;
+}
+
+.progress {
+	width: 300px;
+	background-color: darkgray;
+}
+
+.cd-timeline-content p {
+	color: black;
+}
+
+.nut {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: whitesmoke;
+}
+
+.nut:hover {
+	background-color: whitesmoke;
+	color: black;
+}
+
+.label-info {
+	background: none;
+}
+</style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" onload="myFunction()" style="margin: 0;">
+    <div id="loader"></div>
+    <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="font-family: 'Montserrat Alternates', sans-serif; font-size: 20px">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html" style="font-size: 30px">Group 10</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Exercise <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="lab1/lab1.html">Lab1: Introduce Azure</a></li>
+                                <li><a href="">Lab2: </a></li>
+                                <li><a href="">Lab3:</a></li>
+                                <li><a href="">Lab4:</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="diary.html">Group Diary</a></li>
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+    </div>
+    <div style="display: none;" id="myDiv" class="animate-bottom">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="font-family: 'Montserrat Alternates', sans-serif;">
+
+            <div class="container">
+               <div style="display: block;" id="myDiv" class="animate-bottom">
+                <h1>Group Diary</h1>
+                <ul class="nav nav-tabs">
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan1">Week 1</a></li>
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan2">Week 2</a></li>
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan3">Week 3</a></li>
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan4">Week 4</a></li>
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan5">Week 5</a></li>
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan6">Week 6</a></li>
+                    <li><a class="btn btn-primary" data-toggle="tab" href="#tuan7">Week 7</a></li>
+                </ul>
+                
+                
+                <div class="tab-content">
+                
+                    <div id="tuan1" class="tab-pane fade active in ">
+            
+            
+                        <div class="title">
+                            <h2><span>Tuần 1: Công nghệ Azure</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Tổng hợp tài liệu thêm vào websites</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab1/lab1.html">lab1/lab1.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Tìm tài liệu về Azure</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab1/lab1.html">lab1/lab1.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Tìm tài liệu về Azure</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab1/lab1.html">lab1/lab1.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Tìm tài liệu về Azure</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab1/lab1.html">lab1/lab1.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Tìm tài liệu về Azure</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab1/lab1.html">lab1/lab1.html</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tuan2" class="tab-pane fade">
+            
+            
+            
+                        <div class="title">
+                            <h2><span>Tuần 2:HTML</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Tổng hợp tài liệu thêm vào websites</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab2/lab2.html">lab2/lab2.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Tìm tài liệu về HTML</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab2/lab2.html">lab2/lab2.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Tìm tài liệu về HTML</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab2/lab2.html">lab2/lab2.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Tìm tài liệu về HTML</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab2/lab2.html">lab2/lab2.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Tìm tài liệu về HTML</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab2/lab2.html">lab2/lab2.html</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tuan3" class="tab-pane fade">
+                        <div class="title">
+                            <h2><span>Tuần 3: Bootstrap</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Tổng hợp tài liệu thêm vào websites</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab3/lab3.html">lab3/lab3.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Tìm tài liệu về Bootstrap</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab3/lab3.html">lab3/lab3.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Tìm tài liệu về Bootstrap</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab3/lab3.html">lab3/lab3.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Tìm tài liệu về Bootstrap</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab3/lab3.html">lab3/lab3.html</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Tìm tài liệu về Bootstrap</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="lab3/lab3.html">lab3/lab3.html</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tuan4" class="tab-pane fade">
+                        <div class="title">
+                            <h2><span>Tuần 4: Project</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Thiết kế và code trang Prọject</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Thiết kế và code trang Prọject</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Thiết kế hình ảnh và dữ liệu</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Thiết kế hình hình và dữ liệu</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Góp ý trang index</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tuan5" class="tab-pane fade">
+                        <div class="title">
+                            <h2><span>Tuần 5: Project</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Thiết kế và hiện thực trang index</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Thiết kế và hiện thực trang index</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a> <a href="http://nlnovel.azurewebsites.net/info-page.html"></a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Thiết kế hình ảnh và dữ liệu</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/Admin/WebContent/index.html">Trang index Admin</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Thiết kế hình ảnh và dữ liệu</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/Admin/WebContent/index.html">Trang index Admin</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Góp ý bỏ sung project</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/index.html">Trang index</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tuan6" class="tab-pane fade">
+                        <div class="title">
+                            <h2><span>Tuần 6: Project</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Thiết kế và hiện thực trang đọc truyện</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/read-page.html">Trang index</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Thiết kế và hiện thực trang thông tin truyện</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/info-page.html">Trang index</a> <a href="http://nlnovel.azurewebsites.net/info-page.html"></a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Thiết kế và hiện thực trang giao diện trang Admin</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/Admin/WebContent/index.html">Trang index Admin</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Thiết kế và hiện thực trang giao diện trang Admin</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/Admin/WebContent/index.html">Trang index Admin</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Thiết kế hiện thực các bảng dữ liệu trang Admin</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/admin/WebContent/Quanlinguoidung.html">Link</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tuan7" class="tab-pane fade">
+                        <div class="title">
+                            <h2><span>Tuần 7: Project</span></h2>
+                        </div>
+            
+                        <table class="table table-bordered text-left">
+                            <tbody>
+                            <th><h4>Số thứ tự</h4></th>
+                            <th><h4>Mã sinh viên</h4></th>
+                            <th><h4>Tên thành viên</h4></th>
+                            <th><h4>Công việc</h4></th>
+                            <th><h4>Hoàn thành</h4></th>
+                            <th><h4>Kết quả</h4></th>
+                            <tr>
+                                <td>1</td>
+                                <td>15130169</td>
+                                <td>Ngô Hồng Thái</td>
+                                <td>Chỉnh sửa bổ sung Popup trang index,Night more trang đọc truyện, trang thông tin</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/read-page.html">Trang đọc</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>15130176</td>
+                                <td>Trần Quang Thiện</td>
+                                <td>Chỉnh sửa các mục truyện khác, truyện hot, trang thông tin</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/info-page.html">Trang thông tin</a> <a href="http://nlnovel.azurewebsites.net/info-page.html"></a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15130147</td>
+                                <td>Võ Thị Tuyết Phương</td>
+                                <td>Chức năng thêm xóa sửa truyện, người dùng, truyện</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/Admin/WebContent/Quanlitruyen.html">Trang quản lí</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>15130033</td>
+                                <td>Nguyễn Thị Anh Đình</td>
+                                <td>Chức năng thêm xóa sửa truyện, người dùng, truyện</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/Admin/WebContent/Quanlinguoidung.html">Trang quản lí</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15130089</td>
+                                <td>Lê Hoàng Linh</td>
+                                <td>Biểu đồ thống kê</td>
+                                <td>100%</td>
+                                <td>Link: <a class="btn btn-info" href="http://nlnovel.azurewebsites.net/admin/WebContent/index.html">Link</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Modal -->
+        <!-- Thao -->
+
+
+
+
+    </div>
+    <!-- /container -->
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 300);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <p class="footer-company-name">
+                Group 10 - GTNM <br>
+                Teacher: Trần Thị Thanh Nga<br>
+                Information teachnology - Nong Lam University
+                &copy; 2018
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i
+                        class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p>Contact Us</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+    </footer>
+
+    <!-- Footer -->
+</body>
+
+</html>
