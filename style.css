@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 6, 2017, 8:13:22 PM
+    Author     : PC
+*/
+/* Center the loader */
+#loader {
+    position: absolute;
+  
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #94bec4;
+    border-radius: 50%;
+    border-top: 16px solid #c41e5d;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+    display: none;
+   
+}
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #2d2d30;
+    opacity: 0.8;
+    color: #d5d5d5;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 33.33%;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #943131;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #943131;
+    opacity: 1 !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.row p {
+    font-size: 17px;
+    color: rgb(63, 47, 47);
+}
+
+p{
+    font-size: 17px;  
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white; 
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-top: 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 300px;
+}
+button.accordion {
+    /*background-color: #2d2d30;*/
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: left;
+    opacity: 0.8;
+    outline: none;
+    font-size: 17px;
+    transition: 0.4s;
+    margin: 0;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #943131;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+div.panel {
+    padding: 0 10px;
+    background-color: rgba(91, 116, 142, 0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 0;
+    color: white;
+    margin-bottom: -1px;
+}
+body{
+    background-image: url('images/thu2.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.jumbotron{
+    background-color: transparent;
+    color: rgb(37, 15, 15);
+
+}
+h2 {
+    color: rgb(63, 47, 47);
+    letter-spacing: 3px;
+    font-size: 45px;
+}
+
+.row h3 {
+    color: rgb(63, 47, 47);
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+.indent {
+    padding-left: 20px;
+}
+
+.title {
+    text-align: left;
+    border-bottom: 2px solid #444;
+    margin-bottom: 20px;
+    margin-top:  20px;
+    padding-bottom: 1px;
+    color:#ccc;
+}
+.title > span {
+    background-color: #444;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 50px;
+    font-family:  'Montserrat Alternates', sans-serif;
+    border-left: 15px solid transparent;
+    width: 0; height:0;
+}
+
+
+
+
+#myDiv{
+    margin-bottom: 0px;
+}
+
+footer{
+    float: right;
+    width: 100%;
+
+}
