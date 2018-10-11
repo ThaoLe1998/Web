@@ -10,15 +10,14 @@ and open the template in the editor.
 /* Center the loader */
 #loader {
     position: absolute;
-    left: 50%;
-    top: 50%;
+  
     z-index: 1;
     width: 150px;
     height: 150px;
     margin: -75px 0 0 -75px;
-    border: 16px solid #f3f3f3;
+    border: 16px solid #94bec4;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid #c41e5d;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 1s linear infinite;
@@ -56,7 +55,7 @@ and open the template in the editor.
 
 #myDiv {
     display: none;
-    text-align: center;
+   
 }
 /* Style the tab */
 div.tab {
@@ -170,11 +169,10 @@ body{
     background-image: url('images/thu2.png');
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 13px;
 }
 .jumbotron{
     background-color: transparent;
-    color: whitesmoke;
+    color: rgb(37, 15, 15);
 
 }
 h2 {
@@ -211,6 +209,14 @@ h2 {
 }
 
 
+
+
+#myDiv{
+    margin-bottom: 0px;
+}
+
 footer{
-    float: left;
+    float: right;
+    width: 100%;
+
 }
